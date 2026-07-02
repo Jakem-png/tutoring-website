@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kid-Friendly Tutoring — Grades 1–7</title>
+  <style>
+    body { font-family: 'Trebuchet MS', sans-serif; margin: 0; color: #2b2b2b; background: #eef4fb; line-height: 1.6; }
+    .hero { background: #2f6fed; color: white; text-align: center; padding: 50px 20px; }
+    .hero h1 { font-size: 30px; margin: 0 0 10px; }
+    .hero p { font-size: 17px; max-width: 500px; margin: 0 auto 14px; }
+    .badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .badge-pill { background: rgba(255,255,255,0.2); font-size: 13px; padding: 6px 14px; border-radius: 14px; }
+    .container { max-width: 700px; margin: 0 auto; padding: 36px 20px; }
+    h2 { font-size: 22px; margin-bottom: 12px; }
+    .subjects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 30px; }
+    .subject { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); font-weight: bold; }
+    .safety { background: #dbe7fb; border-radius: 10px; padding: 18px; margin-bottom: 30px; font-size: 14px; }
+    .safety b { color: #2456c7; }
+    .howit { margin-bottom: 30px; }
+    .step { background: white; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); font-size: 15px; }
+    .step b { color: #2f6fed; }
+    .pack { background: white; border-radius: 12px; padding: 26px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 16px; }
+    .pack.best { border: 2px solid #2f6fed; }
+    .badge { display: inline-block; background: #2f6fed; color: white; font-size: 12px; font-weight: bold; padding: 3px 10px; border-radius: 12px; margin-bottom: 8px; }
+    .pack-name { font-size: 18px; font-weight: bold; }
+    .pack-desc { font-size: 14px; color: #666; margin: 4px 0 8px; }
+    .price { font-size: 34px; font-weight: bold; margin: 8px 0; }
+    .buy-btn { display: inline-block; background: #2f6fed; color: white; padding: 15px 42px; border-radius: 8px; text-decoration: none; font-size: 16px; font-weight: bold; margin-top: 8px; }
+    .buy-btn:hover { background: #2456c7; }
+    .note { font-size: 13px; color: #888; margin-top: 18px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Kid-Friendly Tutoring</h1>
+    <p>Patient, one-on-one help for grades 1–7 in Math, Science, Religion, and ELA — from a real student who gets it.</p>
+    <div class="badges">
+      <span class="badge-pill">✓ Grades 1–7</span>
+      <span class="badge-pill">✓ Parent supervised</span>
+      <span class="badge-pill">✓ One-on-one</span>
+    </div>
+    <a href="#packages" class="buy-btn">See packages</a>
+  </div>
+
+  <div class="container">
+
+    <h2>Subjects · Grades 1–7</h2>
+    <div class="subjects">
+      <div class="subject">Math</div>
+      <div class="subject">Science</div>
+      <div class="subject">Religion</div>
+      <div class="subject">ELA</div>
+    </div>
+
+    <div class="safety">
+      <b>Safe &amp; supervised:</b> Sessions are run by a student tutor with a parent present. We keep things safe, encouraging, and focused on real progress.
+    </div>
+
+    <h2>How it works</h2>
+    <div class="howit">
+      <div class="step"><b>1.</b> Pick a subject (or two) and a package below.</div>
+      <div class="step"><b>2.</b> Book and pay securely through Stripe.</div>
+      <div class="step"><b>3.</b> We'll reach out to schedule your first session.</div>
+    </div>
+
+    <h2 id="packages">Packages</h2>
+
+    <div class="pack">
+      <div class="pack-name">Single Subject</div>
+      <div class="pack-desc">8 lessons · pick any one subject</div>
+      <div class="price">$300</div>
+      <!-- DAD: replace the # below with the Stripe Payment Link for the $300 package -->
+      <a href="#" class="buy-btn">Book now</a>
+    </div>
+
+    <div class="pack best">
+      <div class="badge">BEST VALUE</div>
+      <div class="pack-name">Two Subjects</div>
+      <div class="pack-desc">16 lessons · e.g. Math + ELA · save $100</div>
+      <div class="price">$500</div>
+      <!-- DAD: replace the # below with the Stripe Payment Link for the $500 package -->
+      <a href="#" class="buy-btn">Book now</a>
+    </div>
+
+    <p class="note">Secure checkout powered by Stripe. Card entered safely on Stripe's page, never stored here.</p>
+
+  </div>
+
+</body>
+</html>
